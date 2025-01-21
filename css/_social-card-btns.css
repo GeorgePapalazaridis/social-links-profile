@@ -1,0 +1,26 @@
+.social-card-btns-container {
+    width: 100%;
+}
+
+.social-card-btns {
+    width: 100%;
+    gap: var(--gap-medium);
+    margin: 0;
+    padding: 0;
+}
+
+.social-card-btns li {
+    width: 100%;
+    background-color: var(--color-grey-700);
+    border-radius: var(--border-radius-small);
+    padding: var(--spacing-small);
+    list-style-type: none;
+}
+
+.social-card-btns li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-white);
+}

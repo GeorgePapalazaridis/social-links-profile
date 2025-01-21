@@ -1,16 +1,16 @@
 .social-card-wrapper {
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     background-color: var(--color-grey-800);
     border-radius: var(--border-radius-medium);
-    padding: 24px;
-    margin: 0 24px 0 24px;
-    gap: 24px;
+    padding: var(--spacing-large);
+    gap: var(--gap-large);
 }
 
 .social-card-image {
     width: 88px;
     height: 88px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-cycle);
 }
 
 .social-card-name {

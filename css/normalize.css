@@ -1,0 +1,124 @@
+/* normalize.css | MIT License | github.com/necolas/normalize.css */
+
+/* Document-wide styles */
+html {
+    line-height: 1.15; /* Adjust line height for better readability */
+    -webkit-text-size-adjust: 100%; /* Prevent font resizing in landscape */
+    font-size: 16px;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+}
+
+/* HTML5 display definitions */
+main {
+    display: block; /* Allow main to behave as a block element */
+}
+
+hr {
+    box-sizing: content-box; /* Match box model */
+    height: 0; /* Remove height */
+    overflow: visible; /* Ensure overflow behavior */
+}
+
+/* Typography */
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* Fix font inheritance */
+    font-size: 1em; /* Ensure consistent size */
+}
+
+/* Embedded content */
+img {
+    border-style: none; /* Remove border from images */
+}
+
+svg {
+    fill: currentColor; /* Use current text color for SVGs */
+}
+
+/* Form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* Ensure font matches */
+    font-size: 100%; /* Ensure consistent size */
+    line-height: 1.15; /* Maintain readability */
+    margin: 0; /* Remove default margin */
+}
+
+button,
+input {
+    overflow: visible; /* Ensure default overflow */
+}
+
+button {
+    text-transform: none; /* Prevent auto-capitalization */
+}
+
+select {
+    text-transform: none; /* Prevent auto-capitalization */
+}
+
+textarea {
+    overflow: auto; /* Allow scrolling for long text */
+}
+
+fieldset {
+    margin: 0; /* Remove margin */
+    padding: 0.35em 0.75em 0.625em; /* Default padding */
+}
+
+legend {
+    box-sizing: border-box; /* Match box model */
+    color: inherit; /* Inherit color */
+    display: table; /* Table layout for centering */
+    max-width: 100%; /* Prevent overflow */
+    white-space: normal; /* Enable wrapping */
+}
+
+progress {
+    vertical-align: baseline; /* Align progress bar */
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto; /* Consistent size for spinner buttons */
+}
+
+[type="search"] {
+    appearance: textfield; /* Standard property for compatibility */
+    -webkit-appearance: textfield; /* Prevent special search input styling */
+    outline-offset: -2px; /* Adjust outline */
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none; /* Remove decoration */
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* Button-like appearance */
+    font: inherit; /* Inherit font styles */
+}
+
+details {
+    display: block; /* Enable block display */
+}
+
+summary {
+    display: list-item; /* Display as list item */
+}
+
+template {
+    display: none; /* Hide by default */
+}
+
+/* Hidden elements */
+[hidden] {
+    display: none; /* Ensure hidden elements are not displayed */
+}

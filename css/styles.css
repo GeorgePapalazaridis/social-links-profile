@@ -1,6 +1,8 @@
 @import "_variables.css";
 @import "_responsiveness.css";
-@import "_social-card.css";
+@import "_social-card-info.css";
+@import "_social-card-btns.css";
+@import "normalize.css";
 
 * {
     margin: 0;
@@ -28,32 +30,5 @@ h4,
 h5,
 h6 {
     line-height: var(--line-height);
-    color: var(--color-white);
-}
-
-.social-card-btns-container {
-    width: 327px;
-}
-
-.social-card-btns {
-    width: 100%;
-    gap: var(--gap-medium);
-    margin: 0;
-    padding: 0;
-}
-
-.social-card-btns li {
-    width: 100%;
-    background-color: var(--color-grey-700);
-    border-radius: var(--border-radius-small);
-    padding: 12px;
-    list-style-type: none;
-}
-
-.social-card-btns li a {
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
     color: var(--color-white);
 }
