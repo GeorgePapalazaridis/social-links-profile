@@ -1,0 +1,45 @@
+.social-card-wrapper {
+    width: 375px;
+    background-color: var(--color-grey-800);
+    border-radius: var(--border-radius-medium);
+    padding: 24px;
+    margin: 0 24px 0 24px;
+    gap: 24px;
+}
+
+.social-card-image {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.social-card-name {
+    font-size: var(--font-size-big);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+}
+
+.social-card-location {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-green);
+}
+
+.social-card-description {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-normal);
+    color: var(--color-white);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}

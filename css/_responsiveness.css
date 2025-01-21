@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.flex-text-center {
+  text-align: center;
+}
+
 .align-items-start {
   align-items: flex-start;
 }
