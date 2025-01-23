@@ -1,0 +1,55 @@
+.social-card-btns-container {
+  width: 100%;
+}
+
+.social-card-btns {
+  width: 100%;
+  gap: var(--gap-medium);
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  width: 100%;
+  background-color: var(--color-grey-700);
+  border-radius: var(--border-radius-small);
+  padding: var(--spacing-small);
+  list-style-type: none;
+  transition: background-color 0.5s ease, transform 0.2s ease;
+}
+
+.button a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.5s ease;
+}
+
+.button:hover {
+  background-color: var(--color-green);
+  transform: translateY(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 2px 5px hsl(75, 73%, 36%);
+}
+
+.button:hover a {
+  color: var(--color-grey-800);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 3px 8px var(--color-green);
+}
+
+.button:focus-within {
+  outline: 1px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+.button:focus-within a {
+  color: var(--color-grey-900);
+  outline: none;
+}
