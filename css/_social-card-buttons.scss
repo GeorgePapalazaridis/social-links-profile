@@ -32,7 +32,7 @@
 .button:hover {
   background-color: var(--color-green);
   transform: translateY(2px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 2px 5px hsl(75, 73%, 36%);
+  box-shadow: var(--shadow-button-hover);
 }
 
 .button:hover a {
@@ -41,7 +41,7 @@
 
 .button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 3px 8px var(--color-green);
+  box-shadow: var(--shadow-button-active);
 }
 
 .button:focus-within {

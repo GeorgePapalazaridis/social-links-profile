@@ -1,9 +1,320 @@
-@import "_variables.css";
-@import "_responsiveness.css";
-@import "_social-card-info.css";
-@import "_social-card-buttons.css";
-@import "normalize.css";
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-green: hsl(75, 94%, 57%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  /* Typography */
+  --font-family: "Inter", sans-serif;
+  --font-size-main: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-big: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height: 1.5;
+  /* Spacing (optional for padding/margin) */
+  --spacing-small: 12px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-extra-large: 40px;
+  --gap-extra-small: 4px;
+  --gap-small: 12px;
+  --gap-medium: 16px;
+  --gap-large: 24px;
+  --border-radius-small: 8px;
+  --border-radius-medium: 12px;
+  --border-radius-cycle: 50%;
+  /* Shadows */
+  --shadow-button-active: 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 3px 8px var(--color-green);
+  --shadow-button-hover: 0 4px 6px rgba(0, 0, 0, 0.2),
+    0 2px 5px hsl(75, 73%, 36%);
+}
 
+.social-card-wrapper {
+  width: 100%;
+  max-width: 375px;
+  background-color: var(--color-grey-800);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-large);
+  gap: var(--gap-large);
+}
+
+.social-card-image {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--border-radius-cycle);
+}
+
+.social-card-title-wrapper {
+  gap: var(--gap-extra-small);
+}
+
+.social-card-name {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.social-card-location {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-green);
+}
+
+.social-card-description {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-white);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.social-card-btns-container {
+  width: 100%;
+}
+
+.social-card-btns {
+  width: 100%;
+  gap: var(--gap-medium);
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  width: 100%;
+  background-color: var(--color-grey-700);
+  border-radius: var(--border-radius-small);
+  padding: var(--spacing-small);
+  list-style-type: none;
+  transition: background-color 0.5s ease, transform 0.2s ease;
+}
+
+.button a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.5s ease;
+}
+
+.button:hover {
+  background-color: var(--color-green);
+  transform: translateY(2px);
+  box-shadow: var(--shadow-button-hover);
+}
+
+.button:hover a {
+  color: var(--color-grey-800);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-button-active);
+}
+
+.button:focus-within {
+  outline: 1px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+.button:focus-within a {
+  color: var(--color-grey-900);
+  outline: none;
+}
+
+/* normalize.css | MIT License | github.com/necolas/normalize.css */
+/* Document-wide styles */
+html {
+  line-height: 1.15; /* Adjust line height for better readability */
+  -webkit-text-size-adjust: 100%; /* Prevent font resizing in landscape */
+  font-size: 16px;
+}
+
+body {
+  margin: 0; /* Remove default margin */
+}
+
+/* HTML5 display definitions */
+main {
+  display: block; /* Allow main to behave as a block element */
+}
+
+hr {
+  box-sizing: content-box; /* Match box model */
+  height: 0; /* Remove height */
+  overflow: visible; /* Ensure overflow behavior */
+}
+
+/* Typography */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* Fix font inheritance */
+  font-size: 1em; /* Ensure consistent size */
+}
+
+/* Embedded content */
+img {
+  border-style: none; /* Remove border from images */
+}
+
+svg {
+  fill: currentColor; /* Use current text color for SVGs */
+}
+
+/* Form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* Ensure font matches */
+  font-size: 100%; /* Ensure consistent size */
+  line-height: 1.15; /* Maintain readability */
+  margin: 0; /* Remove default margin */
+}
+
+button,
+input {
+  overflow: visible; /* Ensure default overflow */
+}
+
+button {
+  text-transform: none; /* Prevent auto-capitalization */
+}
+
+select {
+  text-transform: none; /* Prevent auto-capitalization */
+}
+
+textarea {
+  overflow: auto; /* Allow scrolling for long text */
+}
+
+fieldset {
+  margin: 0; /* Remove margin */
+  padding: 0.35em 0.75em 0.625em; /* Default padding */
+}
+
+legend {
+  box-sizing: border-box; /* Match box model */
+  color: inherit; /* Inherit color */
+  display: table; /* Table layout for centering */
+  max-width: 100%; /* Prevent overflow */
+  white-space: normal; /* Enable wrapping */
+}
+
+progress {
+  vertical-align: baseline; /* Align progress bar */
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto; /* Consistent size for spinner buttons */
+}
+
+[type=search] {
+  appearance: textfield; /* Standard property for compatibility */
+  -webkit-appearance: textfield; /* Prevent special search input styling */
+  outline-offset: -2px; /* Adjust outline */
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none; /* Remove decoration */
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* Button-like appearance */
+  font: inherit; /* Inherit font styles */
+}
+
+details {
+  display: block; /* Enable block display */
+}
+
+summary {
+  display: list-item; /* Display as list item */
+}
+
+template {
+  display: none; /* Hide by default */
+}
+
+/* Hidden elements */
+[hidden] {
+  display: none; /* Ensure hidden elements are not displayed */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-text-center {
+  text-align: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.flex-gap-small {
+  gap: var(--gap-small);
+}
+
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+/* Tablet styles (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .social-card-wrapper {
+    min-width: 456px;
+    padding: var(--spacing-extra-large);
+  }
+}
+/* Desktop styles (1024px and larger) */
+@media (min-width: 1024px) {
+  .social-card-wrapper {
+    min-width: 384px;
+    padding: var(--spacing-extra-large);
+  }
+}
 * {
   box-sizing: border-box;
   /* outline: 1px solid red; */
@@ -59,3 +370,5 @@ html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
+
+/*# sourceMappingURL=styles.css.map */
