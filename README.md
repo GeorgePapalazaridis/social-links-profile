@@ -1,4 +1,4 @@
-# Social Links Profile
+# **Social Links Profile**
 
 ![Design preview](images/preview.jpg)
 
@@ -6,7 +6,7 @@ This repository contains my solution for the **Frontend Mentor - Social Links Pr
 
 ---
 
-## 📋 Table of Contents
+## **📋 Table of Contents**
 
 - [Overview](#overview)
   - [Features](#features)
@@ -20,68 +20,72 @@ This repository contains my solution for the **Frontend Mentor - Social Links Pr
 
 ---
 
-## 📖 Overview
+## **📖 Overview**
 
-### Features
+### **Features**
 
-- **Responsive Design**: Adapts seamlessly to different screen sizes.
-- **Interactive States**: Buttons have hover, focus, and active states for better UX.
-- **Accessibility**: Semantic markup and focus management ensure a11y compliance.
-- **SCSS Workflow**: Modular and maintainable styling using SCSS.
+- **Responsive Design**: Seamlessly adapts to mobile, tablet, and desktop screens.
+- **Interactive States**: Buttons include hover, focus, and active states for enhanced UX.
+- **Accessibility**: Semantic markup and focus management ensure full accessibility compliance.
+- **SCSS Workflow**: Modular and maintainable styling with variables, nesting, and mixins.
 
-### Preview
+### **Preview**
 
-Here’s how the project looks:
+Here’s how the project looks across various screen sizes:
 
-![Mobile View](images/mobile-design.jpg)
-![Desktop View](images/destkop-design.jpg)
-![Active State](images/active-states.jpg)
+- **Mobile View**:  
+  ![Mobile View](images/mobile-design.jpg)
+- **Desktop View**:  
+  ![Desktop View](images/desktop-design.jpg)
+- **Active State**:  
+  ![Active State](images/active-states.jpg)
 
 ---
 
-## 🛠 Technologies Used
+## **🛠 Technologies Used**
 
 - **HTML5**: Semantic and accessible structure.
 - **CSS3**: Custom properties and modern layout techniques.
-- **SCSS**: Modular and reusable styles.
-- **Normalize.css**: Browser consistency for styles.
+- **SCSS**: For reusable, modular, and maintainable styles.
+- **Normalize.css**: Ensures browser consistency for base styles.
 
 ---
 
-## ⚙️ Setup Instructions
+## **⚙️ Setup Instructions**
 
-### Prerequisites
+### **Prerequisites**
 
 Ensure you have the following installed:
 
 - Node.js
 - npm or yarn
 
-### Installation Steps
+### **Installation Steps**
 
-1. Clone this repository:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/GeorgePapalazaridis/social-links-profile.git
    ```
-2. Navigate to the project directory:
+2. **Navigate to the project directory**:
    ```bash
    cd social-links-profile
    ```
-3. Install dependencies:
+3. **Install dependencies**:
    ```bash
    npm install
    ```
-4. Compile SCSS:
+4. **Compile SCSS**:
    ```bash
    npm run sass
    ```
-5. Open `index.html` in your browser or use a live server to preview the project.
+5. **Preview the project**:  
+   Open `index.html` in your browser or use a live server.
 
 ---
 
-## 🌐 Meta Information
+## **🌐 Meta Information**
 
-Here are the meta tags added for improved SEO and social sharing:
+To improve SEO and social sharing, the following meta tags were included:
 
 ```html
 <meta
@@ -93,50 +97,51 @@ Here are the meta tags added for improved SEO and social sharing:
   property="og:description"
   content="A responsive and accessible social links profile card. Built with semantic HTML, modern CSS, and SCSS."
 />
-<meta property="og:image" content="./preview.jpg" />
+<meta property="og:image" content="./images/preview.jpg" />
 <meta
   property="og:url"
-  content="https://github.com/GeorgePapalazaridis/social-links-profile"
+  content="https://georgepapalazaridis.github.io/social-links-profile/"
 />
 <meta name="twitter:card" content="summary_large_image" />
 ```
 
 ---
 
-## 🔄 Refactoring Plan
+## **🔄 Refactoring Details**
 
-To improve maintainability, I plan to:
+The project has been successfully refactored to improve maintainability and reusability:
 
-- Refactor the `<li>` button code into a reusable HTML component.
-- Create a SCSS mixin for button styling to ensure consistent styles across all buttons.
-- Example refactored component:
+1. **Componentized Buttons**: The `<li>` elements have been refactored into a reusable button component:
 
-  ```html
-  <li class="button">
-    <a href="{{ href }}" target="_blank" rel="noopener noreferrer">
-      {{ label }}
-    </a>
-  </li>
-  ```
+   ```html
+   <li class="button">
+     <a href="{{ href }}" target="_blank" rel="noopener noreferrer">
+       {{ label }}
+     </a>
+   </li>
+   ```
 
-- Dynamically inject `href` and `label` values through a templating engine or JavaScript.
+   This ensures a cleaner, DRY (Don't Repeat Yourself) structure.
 
----
-
-## ✨ Learnings
-
-- Practiced advanced CSS techniques like `focus-within` and `active` states for buttons.
-- Improved knowledge of SCSS modularity and the use of variables for consistent design.
-- Enhanced understanding of accessibility best practices with focus management and semantic HTML.
+2. **Dynamic Data Handling**: Dynamic data injection for `href` and `label` was implemented using reusable templates, enhancing flexibility and reducing redundancy.
 
 ---
 
-## 👤 Author
+## **✨ Learnings**
 
-- GitHub - [@GeorgePapalazaridis](https://github.com/GeorgePapalazaridis)
-- Frontend Mentor - [@GeorgePapalazaridis](https://www.frontendmentor.io/profile/GeorgePapalazaridis)
-- LinkedIn - [George Papalazaridis](https://www.linkedin.com/in/george-papalazaridis-865689120/)
+- Gained experience with advanced CSS techniques like `:focus-within`, `:hover`, and active states for buttons.
+- Enhanced SCSS modularity and styling consistency through the use of variables and nesting.
+- Improved understanding of accessibility best practices for navigation, focus management, and semantic HTML structure.
+- Successfully refactored repetitive code into reusable components, such as the button implementation, to promote DRY (Don't Repeat Yourself) principles and improve maintainability.
 
 ---
 
-Feel free to reach out for feedback or collaboration! ✨
+## **👤 Author**
+
+- **GitHub**: [@GeorgePapalazaridis](https://github.com/GeorgePapalazaridis)
+- **Frontend Mentor**: [@GeorgePapalazaridis](https://www.frontendmentor.io/profile/GeorgePapalazaridis)
+- **LinkedIn**: [George Papalazaridis](https://www.linkedin.com/in/george-papalazaridis-865689120/)
+
+---
+
+✨ Thank you for reviewing my project! Feel free to connect with me for feedback or collaboration. 😊

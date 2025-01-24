@@ -1,55 +1,55 @@
 .social-card-btns-container {
   width: 100%;
-}
 
-.social-card-btns {
-  width: 100%;
-  gap: var(--gap-medium);
-  margin: 0;
-  padding: 0;
-}
+  .social-card-btns {
+    width: 100%;
+    gap: var(--gap-medium);
+    margin: 0;
+    padding: 0;
 
-.button {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
-  width: 100%;
-  background-color: var(--color-grey-700);
-  border-radius: var(--border-radius-small);
-  padding: var(--spacing-small);
-  list-style-type: none;
-  transition: background-color 0.5s ease, transform 0.2s ease;
-}
+    .button {
+      font-size: var(--font-size-small);
+      font-weight: var(--font-weight-bold);
+      width: 100%;
+      background-color: var(--color-grey-700);
+      border-radius: var(--border-radius-small);
+      padding: var(--spacing-small);
+      list-style-type: none;
+      transition: background-color 0.5s ease, transform 0.2s ease;
 
-.button a {
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: var(--color-white);
-  transition: color 0.5s ease;
-}
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: var(--color-white);
+        transition: color 0.5s ease;
+      }
 
-.button:hover {
-  background-color: var(--color-green);
-  transform: translateY(2px);
-  box-shadow: var(--shadow-button-hover);
-}
+      &:hover {
+        background-color: var(--color-green);
+        transform: translateY(2px);
+        box-shadow: var(--shadow-button-hover);
 
-.button:hover a {
-  color: var(--color-grey-800);
-}
+        a {
+          color: var(--color-grey-800);
+        }
+      }
 
-.button:active {
-  transform: translateY(0);
-  box-shadow: var(--shadow-button-active);
-}
+      &:active {
+        transform: translateY(0);
+        box-shadow: var(--shadow-button-active);
+      }
 
-.button:focus-within {
-  outline: 1px solid var(--color-green);
-  outline-offset: 2px;
-}
+      &:focus-within {
+        outline: 1px solid var(--color-green);
+        outline-offset: 2px;
 
-.button:focus-within a {
-  color: var(--color-grey-900);
-  outline: none;
+        a {
+          color: var(--color-grey-900);
+          outline: none;
+        }
+      }
+    }
+  }
 }

@@ -13,27 +13,50 @@
     />
 
     <title>Social Links Profile</title>
+    <meta property="og:title" content="Social Links Profile" />
+    <meta
+      property="og:description"
+      content="Explore the social media links of George Papalazaridis, a Front-End Angular Developer from Thessaloniki, Greece."
+    />
+
+    <meta property="og:image" content="images/preview.jpg" />
+    <meta
+      property="og:url"
+      content="https://georgepapalazaridis.github.io/social-links-profile/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
 
   <body class="flex flex-center">
     <main>
       <article class="social-card-wrapper flex flex-column flex-center">
-        <h1 class="visually-hidden">Social Links Profile</h1>
-        <figure class="flex flex-center">
-          <img class="social-card-image" src="images/george-pap.png" alt="" />
-        </figure>
+        <header class="header-wrapper flex flex-column flex-center">
+          <h1 class="visually-hidden">Social Links Profile</h1>
+          <figure class="flex flex-center">
+            <img
+              class="social-card-image"
+              src="images/george-pap.png"
+              alt="George Papalazaridis' profile picture"
+            />
+          </figure>
 
-        <section class="social-card-title-wrapper flex flex-column flex-center">
-          <h2 class="social-card-name">George Papalazaridis</h2>
-          <h3 class="social-card-location">Thessaloniki, Greece</h3>
-        </section>
+          <section
+            class="social-card-title-wrapper flex flex-column flex-center"
+          >
+            <h2 class="social-card-name">George Papalazaridis</h2>
+            <h3 class="social-card-location">Thessaloniki, Greece</h3>
+          </section>
 
-        <section class="flex flex-text-center">
-          <p class="social-card-description">"Front-end Angular developer"</p>
-        </section>
+          <section class="flex flex-text-center">
+            <p class="social-card-description">"Front-end Angular developer"</p>
+          </section>
+        </header>
 
         <section class="social-card-btns-container">
-          <ul class="social-card-btns flex flex-column flex-center">
+          <ul
+            class="social-card-btns flex flex-column flex-center"
+            aria-label="Social media links"
+          >
             <li class="button">
               <a
                 href="https://github.com/GeorgePapalazaridis"
