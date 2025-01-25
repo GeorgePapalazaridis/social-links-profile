@@ -1,0 +1,70 @@
+@use "_variables";
+@use "_social-card-header";
+@use "_social-card-buttons";
+@use "normalize";
+@use "_responsiveness";
+
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-grey-900);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-height);
+  color: var(--color-white);
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.social-card-wrapper {
+  width: 100%;
+  max-width: 375px;
+  background-color: var(--color-grey-800);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-large);
+  gap: var(--gap-large);
+}
