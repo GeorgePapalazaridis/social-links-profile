@@ -26,12 +26,11 @@
     <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Set base dynamically -->
-    <base href="/" />
-    <script type="module">
+    <script>
       const isProduction =
         window.location.hostname === "georgepapalazaridis.github.io";
       const baseUrl = isProduction ? "/social-links-profile/" : "/";
-      document.querySelector("base").setAttribute("href", baseUrl);
+      document.write(`<base href="${baseUrl}">`);
     </script>
   </head>
 
@@ -68,15 +67,7 @@
         </section>
       </article>
     </main>
+    <!-- Dynamic JavaScript -->
     <script type="module" src="javascript/script.js"></script>
-    <script type="module">
-      // Fallback for production
-      if (window.location.hostname === "georgepapalazaridis.github.io") {
-        const script = document.createElement("script");
-        script.type = "module";
-        script.src = "/social-links-profile/javascript/script.js";
-        document.body.appendChild(script);
-      }
-    </script>
   </body>
 </html>
