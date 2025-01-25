@@ -157,6 +157,29 @@ template {
     0 2px 5px hsl(75, 73%, 36%);
 }
 
+.social-card-wrapper {
+  width: 100%;
+  max-width: 375px;
+  min-height: 100%;
+  background-color: var(--color-grey-800);
+  border-radius: var(--border-radius-medium);
+  padding: var(--spacing-large);
+  gap: var(--gap-large);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
 .header-wrapper {
   gap: var(--gap-large);
 }
@@ -195,9 +218,14 @@ template {
   padding: 0;
 }
 .social-card-btns-container .social-card-btns .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-bold);
   width: 100%;
+  min-height: 2.82rem;
   background-color: var(--color-grey-700);
   border-radius: var(--border-radius-small);
   padding: var(--spacing-small);
@@ -275,7 +303,7 @@ template {
   .social-card-wrapper {
     min-width: 456px;
     min-height: 70vh;
-    padding: var(--spacing-extra-large) !important;
+    padding: var(--spacing-extra-large);
   }
 }
 /* Desktop styles (1024px and larger) */
@@ -283,12 +311,11 @@ template {
   .social-card-wrapper {
     min-width: 384px;
     min-height: 75vh;
-    padding: var(--spacing-extra-large) !important;
+    padding: var(--spacing-extra-large);
   }
 }
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 
 html {
@@ -340,29 +367,6 @@ body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
-}
-
-.social-card-wrapper {
-  width: 100%;
-  max-width: 375px;
-  min-height: 100%;
-  background-color: var(--color-grey-800);
-  border-radius: var(--border-radius-medium);
-  padding: var(--spacing-large);
-  gap: var(--gap-large);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

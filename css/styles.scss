@@ -1,12 +1,12 @@
 @use "normalize";
 @use "_variables";
+@use "_global";
 @use "_social-card-header";
 @use "_social-card-buttons";
 @use "_responsiveness";
 
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 
 html {
@@ -58,27 +58,4 @@ body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
-}
-
-.social-card-wrapper {
-  width: 100%;
-  max-width: 375px;
-  min-height: 100%;
-  background-color: var(--color-grey-800);
-  border-radius: var(--border-radius-medium);
-  padding: var(--spacing-large);
-  gap: var(--gap-large);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
 }
