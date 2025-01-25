@@ -160,7 +160,6 @@ template {
 .social-card-wrapper {
   width: 100%;
   max-width: 375px;
-  min-height: 100%;
   background-color: var(--color-grey-800);
   border-radius: var(--border-radius-medium);
   padding: var(--spacing-large);
@@ -302,7 +301,6 @@ template {
 @media (min-width: 768px) and (max-width: 1023px) {
   .social-card-wrapper {
     min-width: 456px;
-    min-height: 70vh;
     padding: var(--spacing-extra-large);
   }
 }
@@ -310,7 +308,6 @@ template {
 @media (min-width: 1024px) {
   .social-card-wrapper {
     min-width: 384px;
-    min-height: 75vh;
     padding: var(--spacing-extra-large);
   }
 }
