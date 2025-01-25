@@ -1,114 +1,3 @@
-:root {
-  /* Colors */
-  --color-white: hsl(0, 0%, 100%);
-  --color-green: hsl(75, 94%, 57%);
-  --color-grey-700: hsl(0, 0%, 20%);
-  --color-grey-800: hsl(0, 0%, 12%);
-  --color-grey-900: hsl(0, 0%, 8%);
-  /* Typography */
-  --font-family: "Inter", sans-serif;
-  --font-size-main: 1rem;
-  --font-size-small: 0.875rem;
-  --font-size-big: 1.5rem;
-  --font-weight-normal: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --line-height: 1.5;
-  /* Spacing (optional for padding/margin) */
-  --spacing-small: 12px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
-  --spacing-extra-large: 40px;
-  --gap-extra-small: 4px;
-  --gap-small: 12px;
-  --gap-medium: 16px;
-  --gap-large: 24px;
-  --border-radius-small: 8px;
-  --border-radius-medium: 12px;
-  --border-radius-cycle: 50%;
-  /* Shadows */
-  --shadow-button-active: 0 2px 4px rgba(0, 0, 0, 0.3),
-    0 3px 8px var(--color-green);
-  --shadow-button-hover: 0 4px 6px rgba(0, 0, 0, 0.2),
-    0 2px 5px hsl(75, 73%, 36%);
-}
-
-.header-wrapper {
-  gap: var(--gap-large);
-}
-.header-wrapper .social-card-image {
-  width: 88px;
-  height: 88px;
-  border-radius: var(--border-radius-cycle);
-}
-.header-wrapper .social-card-title-wrapper {
-  gap: var(--gap-extra-small);
-}
-.header-wrapper .social-card-title-wrapper .social-card-name {
-  font-size: var(--font-size-big);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-white);
-  text-align: center;
-}
-.header-wrapper .social-card-title-wrapper .social-card-location {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-green);
-}
-.header-wrapper .social-card-description {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-normal);
-  color: var(--color-white);
-}
-
-.social-card-btns-container {
-  width: 100%;
-}
-.social-card-btns-container .social-card-btns {
-  width: 100%;
-  gap: var(--gap-medium);
-  margin: 0;
-  padding: 0;
-}
-.social-card-btns-container .social-card-btns .button {
-  font-size: var(--font-size-small);
-  font-weight: var(--font-weight-bold);
-  width: 100%;
-  background-color: var(--color-grey-700);
-  border-radius: var(--border-radius-small);
-  padding: var(--spacing-small);
-  list-style-type: none;
-  transition: background-color 0.5s ease, transform 0.2s ease;
-}
-.social-card-btns-container .social-card-btns .button a {
-  display: block;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: var(--color-white);
-  transition: color 0.5s ease;
-}
-.social-card-btns-container .social-card-btns .button:hover {
-  background-color: var(--color-green);
-  transform: translateY(2px);
-  box-shadow: var(--shadow-button-hover);
-}
-.social-card-btns-container .social-card-btns .button:hover a {
-  color: var(--color-grey-800);
-}
-.social-card-btns-container .social-card-btns .button:active {
-  transform: translateY(0);
-  box-shadow: var(--shadow-button-active);
-}
-.social-card-btns-container .social-card-btns .button:focus-within {
-  outline: 1px solid var(--color-green);
-  outline-offset: 2px;
-}
-.social-card-btns-container .social-card-btns .button:focus-within a {
-  color: var(--color-grey-900);
-  outline: none;
-}
-
 /* normalize.css | MIT License | github.com/necolas/normalize.css */
 /* Document-wide styles */
 html {
@@ -233,6 +122,117 @@ template {
   display: none; /* Ensure hidden elements are not displayed */
 }
 
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-green: hsl(75, 94%, 57%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+  /* Typography */
+  --font-family: "Inter", sans-serif;
+  --font-size-main: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-big: 1.5rem;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height: 1.5;
+  /* Spacing (optional for padding/margin) */
+  --spacing-small: 12px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-extra-large: 40px;
+  --gap-extra-small: 4px;
+  --gap-small: 12px;
+  --gap-medium: 16px;
+  --gap-large: 24px;
+  --border-radius-small: 8px;
+  --border-radius-medium: 12px;
+  --border-radius-cycle: 50%;
+  /* Shadows */
+  --shadow-button-active: 0 2px 4px rgba(0, 0, 0, 0.3),
+    0 3px 8px var(--color-green);
+  --shadow-button-hover: 0 4px 6px rgba(0, 0, 0, 0.2),
+    0 2px 5px hsl(75, 73%, 36%);
+}
+
+.header-wrapper {
+  gap: var(--gap-large);
+}
+.header-wrapper .social-card-image {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--border-radius-cycle);
+}
+.header-wrapper .social-card-title-wrapper {
+  gap: var(--gap-extra-small);
+}
+.header-wrapper .social-card-title-wrapper .social-card-name {
+  font-size: var(--font-size-big);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  text-align: center;
+}
+.header-wrapper .social-card-title-wrapper .social-card-location {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-green);
+}
+.header-wrapper .social-card-description {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-white);
+}
+
+.social-card-btns-container {
+  width: 100%;
+}
+.social-card-btns-container .social-card-btns {
+  width: 100%;
+  gap: var(--gap-medium);
+  margin: 0;
+  padding: 0;
+}
+.social-card-btns-container .social-card-btns .button {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  width: 100%;
+  background-color: var(--color-grey-700);
+  border-radius: var(--border-radius-small);
+  padding: var(--spacing-small);
+  list-style-type: none;
+  transition: background-color 0.5s ease, transform 0.2s ease;
+}
+.social-card-btns-container .social-card-btns .button a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: color 0.5s ease;
+}
+.social-card-btns-container .social-card-btns .button:hover {
+  background-color: var(--color-green);
+  transform: translateY(2px);
+  box-shadow: var(--shadow-button-hover);
+}
+.social-card-btns-container .social-card-btns .button:hover a {
+  color: var(--color-grey-800);
+}
+.social-card-btns-container .social-card-btns .button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-button-active);
+}
+.social-card-btns-container .social-card-btns .button:focus-within {
+  outline: 1px solid var(--color-green);
+  outline-offset: 2px;
+}
+.social-card-btns-container .social-card-btns .button:focus-within a {
+  color: var(--color-grey-900);
+  outline: none;
+}
+
 .flex {
   display: flex;
 }
@@ -275,7 +275,7 @@ template {
   .social-card-wrapper {
     min-width: 456px;
     min-height: 70vh;
-    padding: var(--spacing-extra-large);
+    padding: var(--spacing-extra-large) !important;
   }
 }
 /* Desktop styles (1024px and larger) */
@@ -283,7 +283,7 @@ template {
   .social-card-wrapper {
     min-width: 384px;
     min-height: 75vh;
-    padding: var(--spacing-extra-large);
+    padding: var(--spacing-extra-large) !important;
   }
 }
 * {
@@ -345,7 +345,7 @@ body::-webkit-scrollbar {
 .social-card-wrapper {
   width: 100%;
   max-width: 375px;
-  min-height: auto;
+  min-height: 100%;
   background-color: var(--color-grey-800);
   border-radius: var(--border-radius-medium);
   padding: var(--spacing-large);

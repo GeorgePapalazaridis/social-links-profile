@@ -1,7 +1,7 @@
+@use "normalize";
 @use "_variables";
 @use "_social-card-header";
 @use "_social-card-buttons";
-@use "normalize";
 @use "_responsiveness";
 
 * {
@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 .social-card-wrapper {
   width: 100%;
   max-width: 375px;
-  min-height: auto;
+  min-height: 100%;
   background-color: var(--color-grey-800);
   border-radius: var(--border-radius-medium);
   padding: var(--spacing-large);
