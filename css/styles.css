@@ -36,18 +36,6 @@
 .header-wrapper {
   gap: var(--gap-large);
 }
-.header-wrapper .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
-}
 .header-wrapper .social-card-image {
   width: 88px;
   height: 88px;
@@ -286,6 +274,7 @@ template {
 @media (min-width: 768px) and (max-width: 1023px) {
   .social-card-wrapper {
     min-width: 456px;
+    min-height: 70vh;
     padding: var(--spacing-extra-large);
   }
 }
@@ -293,6 +282,7 @@ template {
 @media (min-width: 1024px) {
   .social-card-wrapper {
     min-width: 384px;
+    min-height: 75vh;
     padding: var(--spacing-extra-large);
   }
 }
@@ -355,10 +345,24 @@ body::-webkit-scrollbar {
 .social-card-wrapper {
   width: 100%;
   max-width: 375px;
+  min-height: auto;
   background-color: var(--color-grey-800);
   border-radius: var(--border-radius-medium);
   padding: var(--spacing-large);
   gap: var(--gap-large);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -39,6 +39,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .social-card-wrapper {
     min-width: 456px;
+    min-height: 70vh;
     padding: var(--spacing-extra-large);
   }
 }
@@ -47,6 +48,7 @@
 @media (min-width: 1024px) {
   .social-card-wrapper {
     min-width: 384px;
+    min-height: 75vh;
     padding: var(--spacing-extra-large);
   }
 }
