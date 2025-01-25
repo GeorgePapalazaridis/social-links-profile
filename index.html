@@ -68,6 +68,15 @@
         </section>
       </article>
     </main>
-    <script type="module" src="./javascript/script.js"></script>
+    <script type="module" src="javascript/script.js"></script>
+    <script type="module">
+      // Fallback for production
+      if (window.location.hostname === "georgepapalazaridis.github.io") {
+        const script = document.createElement("script");
+        script.type = "module";
+        script.src = "/social-links-profile/javascript/script.js";
+        document.body.appendChild(script);
+      }
+    </script>
   </body>
 </html>
