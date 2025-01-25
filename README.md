@@ -37,7 +37,7 @@ Here’s how the project looks across various screen sizes:
 - **Mobile View**:  
   ![Mobile View](images/mobile-design.jpg)
 - **Desktop View**:  
-  ![Desktop View](images/desktop-design.jpg)
+  ![Desktop View](images/destkop-design.jpg)
 - **Active State**:  
   ![Active State](images/active-states.jpg)
 
