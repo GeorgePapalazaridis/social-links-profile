@@ -12,6 +12,7 @@ This repository contains my solution for the **Frontend Mentor - Social Links Pr
   - [Features](#features)
   - [Preview](#preview)
 - [Technologies Used](#technologies-used)
+- [File Structure](#file-structure)
 - [Setup Instructions](#setup-instructions)
 - [Meta Information](#meta-information)
 - [Refactoring Details](#refactoring-details)
@@ -50,6 +51,45 @@ Here’s how the project looks across various screen sizes:
 - **SCSS**: For reusable, modular, and maintainable styles.
 - **JavaScript**: Dynamically renders social media buttons.
 - **Normalize.css**: Ensures browser consistency for base styles.
+
+---
+
+## **📂 File Structure**
+
+The project is organized into the following structure for better maintainability and scalability:
+
+```
+social-links-profile/
+├── css/
+│   ├── _global.scss                # Global styles
+│   ├── _responsiveness.scss        # Media queries and responsive styles
+│   ├── _social-card-buttons.scss   # Styles for social card buttons
+│   ├── _social-card-header.scss    # Styles for the card header
+│   ├── _variables.scss             # SCSS variables for theming and reusability
+│   ├── normalize.scss              # Normalize.css for consistent base styling
+│   ├── styles.css                  # Compiled CSS file
+│   ├── styles.css.map              # Source map for compiled CSS
+│   └── styles.scss                 # Main SCSS entry point
+├── images/
+│   ├── active-states.jpg           # Preview of active states
+│   ├── destkop-design.jpg          # Desktop layout design
+│   ├── favicon-32x32.png           # Favicon for the project
+│   ├── george-pap.png              # Author's profile image
+│   ├── mobile-design.jpg           # Mobile layout design
+│   └── preview.jpg                 # Overall design preview
+├── javascript/
+│   └── script.js                   # JavaScript for dynamic button rendering
+├── .gitignore                      # Git ignore rules
+├── index.html                      # HTML structure of the project
+├── LICENSE                         # Project license
+└── README.md                       # Documentation for the project
+```
+
+### Key Highlights:
+- **SCSS Modular Structure:** SCSS files are organized by purpose (_global, _variables, components, and responsiveness).
+- **Images:** Includes all visual assets used in the project, such as designs and previews.
+- **JavaScript:** Contains reusable logic for dynamically rendering the social card's buttons.
+- **HTML and README:** The `index.html` file serves as the project's base structure, while the `README.md` provides detailed documentation for developers and collaborators.
 
 ---
 

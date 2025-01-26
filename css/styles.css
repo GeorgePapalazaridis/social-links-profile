@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* normalize.css | MIT License | github.com/necolas/normalize.css */
 /* Document-wide styles */
 html {
@@ -164,6 +165,7 @@ template {
   border-radius: var(--border-radius-medium);
   padding: var(--spacing-large);
   gap: var(--gap-large);
+  transition: all 0.5s ease;
 }
 
 .visually-hidden {
@@ -301,14 +303,18 @@ template {
 /* Tablet styles (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .social-card-wrapper {
-    min-width: 456px;
+    width: 456px;
+    max-width: none; /* Ensure max-width doesn’t interfere */
+    min-width: none;
     padding: var(--spacing-extra-large);
   }
 }
 /* Desktop styles (1024px and larger) */
 @media (min-width: 1024px) {
   .social-card-wrapper {
-    min-width: 384px;
+    width: 384px;
+    max-width: none; /* Ensure max-width doesn’t interfere */
+    min-width: none;
     padding: var(--spacing-extra-large);
   }
 }

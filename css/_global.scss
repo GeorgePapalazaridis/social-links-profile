@@ -1,21 +1,22 @@
 .social-card-wrapper {
-  width: 100%;
-  max-width: 375px;
-  background-color: var(--color-grey-800);
-  border-radius: var(--border-radius-medium);
-  padding: var(--spacing-large);
-  gap: var(--gap-large);
+    width: 100%;
+    max-width: 375px;
+    background-color: var(--color-grey-800);
+    border-radius: var(--border-radius-medium);
+    padding: var(--spacing-large);
+    gap: var(--gap-large);
+    transition: all 0.5s ease;
 }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
 }
