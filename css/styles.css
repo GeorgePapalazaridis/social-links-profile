@@ -230,6 +230,7 @@ template {
   padding: var(--spacing-small);
   list-style-type: none;
   transition: background-color 0.5s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 .social-card-btns-container .social-card-btns .button a {
   display: block;
